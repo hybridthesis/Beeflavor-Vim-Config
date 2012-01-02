@@ -5,6 +5,7 @@ set showcmd                     " display incomplete commands
 filetype plugin indent on       " load file type plugins + indentation
 
 syntax enable "Enable syntax hl
+set cursorline
 
 "" Set font according to system
 " Setting for Mac
@@ -19,8 +20,9 @@ set shell=/bin/bash
 if has("gui_running")
   set guioptions-=T
   set t_Co=256
+  syntax enable
   set background=dark
-  colorscheme peaksea
+  colorscheme solarized
   set nonu
 else
   colorscheme zellner
